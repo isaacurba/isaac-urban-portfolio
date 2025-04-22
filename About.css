@@ -1,0 +1,273 @@
+/* Root & Reset Styles */
+:root {
+    --accent: #514F90;
+    --accent-alt: #6e5de7;
+    --light: rgba(255, 255, 255, 0.85);
+    --dark: #2E2E3A;
+    --glass-bg: rgba(255, 255, 255, 0.15);
+    --hover-shadow: rgba(0, 0, 0, 0.4);
+    --max-width: 1200px;
+    --transition: 0.4s ease;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    scroll-behavior: smooth;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Animated Gradient Background */
+  body {
+    background: linear-gradient(-45deg, #514F90, #2E2E3A, #51527F, #38384A);
+    background-size: 400% 400%;
+    animation: gradientBG 20s ease-in-out infinite;
+    min-height: 100vh;
+  }
+  
+  @keyframes gradientBG {
+    0%, 100% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+  
+  /* Fade‑In Up Animation */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Hero Section */
+  .hero-spotlight {
+    position: relative;
+    padding: 120px 2rem 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: transparent;
+    animation: fadeInUp var(--transition) 0.6s both;
+  }
+  
+  .blob {
+    position: absolute;
+    width: 700px;
+    height: 500px;
+    background: var(--light);
+    top: -200px;
+    right: -200px;
+    clip-path: circle(60% at 40% 40%);
+    opacity: 0.5;
+    animation: blobMove 12s ease-in-out infinite;
+  }
+  
+  @keyframes blobMove {
+    0%, 100% {
+      transform: translate(0, 0) scale(1);
+    }
+    50% {
+      transform: translate(-30px, 20px) scale(1.1);
+    }
+  }
+  
+  .hero-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .image-wrap {
+    flex: 1;
+    max-width: 300px;
+    transform: perspective(1000px) translateZ(0);
+    transition: transform var(--transition);
+  }
+  
+  .image-wrap img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px var(--hover-shadow);
+    transition: transform var(--transition), box-shadow var(--transition);
+  }
+  
+  .image-wrap:hover {
+    transform: perspective(1000px) translateZ(10px);
+  }
+  
+  .image-wrap:hover img {
+    transform: rotateY(15deg) scale(1.05);
+    box-shadow: 0 20px 40px var(--hover-shadow);
+  }
+  
+  .text-wrap {
+    flex: 1;
+    max-width: 600px;
+    padding: 1.5rem;
+    animation: fadeInUp var(--transition) 0.8s both;
+  }
+  
+  .text-wrap h1 {
+    font-size: 2.8rem;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+    background: linear-gradient(90deg, var(--accent), var(--accent-alt));
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  
+  .text-wrap p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Work Section */
+  .work-section {
+    padding: 60px 2rem;
+    text-align: center;
+    background: var(--dark);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: fadeInUp var(--transition) 1s both;
+  }
+  
+  .work-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    background: linear-gradient(90deg, var(--accent-alt), var(--accent));
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  
+  /* Project Blocks */
+  .project-block {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 40px;
+    opacity: 0;
+    animation: fadeInUp var(--transition) 1.2s both;
+  }
+  
+  .project-image,
+  .project-description {
+    flex: 1;
+    min-width: 280px;
+    max-width: 500px;
+  }
+  
+  .project-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: transform var(--transition), box-shadow var(--transition);
+  }
+  
+  .project-image:hover img {
+    transform: scale(1.03);
+    box-shadow: 0 10px 30px var(--hover-shadow);
+  }
+  
+  .project-description {
+    background: var(--glass-bg);
+    padding: 1.5rem;
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    transition: transform var(--transition), box-shadow var(--transition);
+  }
+  
+  .project-block:hover .project-description {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px var(--hover-shadow);
+  }
+  
+  .project-description h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: var(--accent-alt);
+  }
+  
+  .project-description p {
+    font-size: 1.1rem;
+    color: #ddd;
+  }
+  
+  /* More Button */
+  .more-button {
+    margin-top: 30px;
+    animation: fadeInUp var(--transition) 1.4s both;
+  }
+  
+  .more-button button {
+    background: linear-gradient(90deg, var(--accent), var(--accent-alt));
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background var(--transition), transform var(--transition);
+  }
+  
+  .more-button button:hover {
+    background: linear-gradient(90deg, var(--accent-alt), var(--accent));
+    transform: scale(1.05);
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background: var(--accent);
+    color: white;
+    font-size: 1rem;
+    animation: fadeInUp var(--transition) 1.6s both;
+  }
+  
+  /* Mobile-friendly adjustments */
+  @media (max-width: 768px) {
+    .hero-spotlight {
+      padding: 80px 1rem 40px;
+    }
+    .text-wrap h1 {
+      font-size: 2.2rem;
+    }
+    .text-wrap p {
+      font-size: 1rem;
+    }
+    .project-block {
+      flex-direction: column;
+    }
+    .project-image,
+    .project-description {
+      max-width: 100%;
+    }
+    .more-button button {
+      width: 100%;
+    }
+  }
+  

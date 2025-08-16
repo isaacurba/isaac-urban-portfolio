@@ -51,7 +51,9 @@
 
   nav {
     position: fixed;
-    top: 0; left: 0; right: 0;
+    top: 0;
+    left: 0; 
+    right: 0;
     z-index: 1000;               /* ensure it’s on top */
   }
   .glass-nav {
@@ -241,11 +243,11 @@
     }
   
     .menu-toggle {
-      /* display: flex; */
+      display: flex;
     }
   
     .nav-list.active {
-      /* display: flex; */
+      display: flex;
       flex-direction: column;
       position: fixed;   /* full‑screen overlay */
       top: 0; left: 0;
@@ -270,7 +272,7 @@
     @media (max-width: 900px) {
         /* Make each nav link block‑level, larger, spaced out and uppercase */
         .nav-list.active li a {
-          /* display: block; */
+          display: block;
           width: 100%;
           padding: 1.2rem 0;
           font-size: 1.25rem;

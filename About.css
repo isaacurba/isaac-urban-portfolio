@@ -140,6 +140,55 @@
     margin-bottom: 1.5rem;
   }
   
+/* LINK OVERLAY */
+.card {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden; /* ✅ ensures overlay fits image */
+}
+
+.card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 0.5s ease;
+  border-radius: 10px;
+}
+
+.card .overlay {
+  position: absolute;
+  inset: 0; /* ✅ covers entire image */
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  display: flex; /* ✅ centers content */
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.5s ease;
+}
+
+.card .overlay a {
+  color: white;
+  font-size: 2.5rem; /* size of the eye icon */
+  text-decoration: none;
+  opacity: 0.9;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.card .overlay a:hover {
+  transform: scale(1.2);
+  opacity: 1;
+}
+
+.card:hover img {
+  transform: scale(1.05);
+}
+
+.card:hover .overlay {
+  opacity: 1;
+}
+
+
+  
   /* Work Section */
   .work-section {
     padding: 60px 2rem;

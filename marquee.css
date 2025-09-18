@@ -1,14 +1,18 @@
-/* ===== Tech Logos Marquee ===== */
 .tech-stack {
   overflow: hidden;
-  white-space: nowrap;
   background: linear-gradient(-45deg,#514F90,#2E2E3A,#51527F,#38384A);
-  padding: 20px ;
+  padding: 20px;
+  cursor: grab;
+}
+
+.tech-stack:active {
+  cursor: grabbing;
 }
 
 .logos {
   display: inline-flex;
-  animation: scroll 20s linear infinite;
+  user-select: none;
+  will-change: transform;
 }
 
 .logos img {
@@ -19,9 +23,4 @@
 
 .logos img:hover {
   transform: scale(1.2);
-}
-
-@keyframes scroll {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
 }

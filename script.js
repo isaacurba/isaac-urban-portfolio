@@ -19,6 +19,67 @@ function type() {
 window.addEventListener('load', type);
 
 
+
+// MARQUEE
+
+const logos = document.querySelector('.logos');
+
+let pos = 0;                // current offset
+let isDragging = false;
+let startX = 0;
+let scrollStart = 0;
+
+// autoplay scrolling
+function autoScroll() {
+  if (!isDragging) {
+    pos -= 1; // speed
+    logos.style.transform = `translateX(${pos}px)`;
+    // reset for seamless loop
+    if (Math.abs(pos) > logos.scrollWidth / 2) {
+      pos = 0;
+    }
+  }
+  requestAnimationFrame(autoScroll);
+}
+autoScroll();
+
+// mouse/touch drag events
+logos.addEventListener('mousedown', e => {
+  isDragging = true;
+  startX = e.pageX;
+  scrollStart = pos;
+});
+
+document.addEventListener('mouseup', () => {
+  isDragging = false;
+});
+
+document.addEventListener('mousemove', e => {
+  if (!isDragging) return;
+  const dx = e.pageX - startX;
+  pos = scrollStart + dx;
+  logos.style.transform = `translateX(${pos}px)`;
+});
+
+// touch support
+logos.addEventListener('touchstart', e => {
+  isDragging = true;
+  startX = e.touches[0].pageX;
+  scrollStart = pos;
+});
+
+document.addEventListener('touchend', () => {
+  isDragging = false;
+});
+
+document.addEventListener('touchmove', e => {
+  if (!isDragging) return;
+  const dx = e.touches[0].pageX - startX;
+  pos = scrollStart + dx;
+  logos.style.transform = `translateX(${pos}px)`;
+});
+
+
 //CONTACT FORM
 
 document.addEventListener('DOMContentLoaded', () => {

@@ -1,124 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <title>Isaac Urban</title>
-
-  <!-- AOS CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css"/>
-
-  <!-- Main Styles -->
-  <link rel="stylesheet" href="style.css"/>
-  <!-- <link rel="stylesheet" href="About.css"> -->
-  <link rel="stylesheet" href="marquee.css">
-
-  <!-- EJS ICON  -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
-
-
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-303J3NZ0T5"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-303J3NZ0T5');
-</script>
-
-</head>
-<body>
-
-  <!-- Glassmorphic Navbar -->
-  <nav class="glass-nav">
-    <div class="logo"><a href="index.html">IU</a></div>
-    <div class="menu-toggle" id="mobile-menu">
-      <span></span><span></span><span></span>
-    </div>
-    <ul class="nav-list">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="About.html">About</a></li>
-      <!-- <li><a href="#projects">Projects</a></li> -->
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-
-  <!-- Hero Spotlight -->
-  <section id="home" class="hero-spotlight">
-    <div class="blob"></div>
-    <div class="hero-content" data-aos="fade-up">
-
-      <div class="image-wrap">
-        <div class="image-frame"> <!-- background effect -->
-        <img src="images/IMG_0489_edited3-removebg-preview (1).png" alt="Isaac Urban"/></div>
-      </div>
-
-      <div class="text-wrap">
-        <h1 id="typed-text"></h1>
-        <p data-aos="fade-left">
-          I am a Front-End Developer specializing in HTML, CSS, JavaScript, React, and Tailwind CSS. Currently transitioning into backend development with Node.js, with the goal of becoming a well-rounded full-stack developer capable of building both engaging user interfaces and robust server-side applications.
-        </p>
-
-        <a href="About.html" class="btn">See My Work</a>
-      </div>
-
-  </section>
-
-
-    </div><br>
-  <!-- 🔥 Tech Logos Marquee Section -->
-<!-- ===== Tech Logos Marquee ===== -->
-<section class="tech-stack">
-  <div class="logos">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js">
-
-    <!-- repeat for seamless loop -->
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js">
-  </div>
-</section>
-
-
-
-  <!-- Footer Section -->
-
-  <footer>
-    <div class="social-icons">
-      <a href="https://github.com/isaacurba" target="_blank" title="GitHub">
-        <i class="fab fa-github"></i>
-      </a>
-      <a href="https://linkedin.com/in/boluwatife-kpomassi-472b202b7" target="_blank" title="LinkedIn">
-        <i class="fab fa-linkedin"></i>
-      </a>
-      <a href="https://x.com/theisaacurban" target="_blank" title="X (Twitter)">
-        <i class="fab fa-x-twitter"></i>
-      </a>
-      <a href="https://tiktok.com/@theisaacurban" target="_blank" title="TikTok">
-        <i class="fab fa-tiktok"></i>
-      </a>
-      <a href="https://medium.com/@Isaacurban0" target="_blank" title="Medium">
-        <i class="fab fa-medium"></i>
-      </a>
-    </div>
-    <p>&copy; 2025 Isaac Urban. All rights reserved.</p>
-  
-  </footer>
-
-  
-  <!-- AOS & Main Script -->
-  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-  <script src="script.js"></script>
-  <script> AOS.init({ once: true }); </script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>my-portfolio</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>

@@ -6,7 +6,7 @@ const Navbar = () => {
 
   return (
     <header className="w-full bg-[#1a1a1a]">
-      <nav className="relative max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+      <nav className="relative max-w-7xl mx-auto flex items-center justify-between px-6 py-7">
         
         {/* Logo */}
         <div className="text-white font-semibold text-xl z-50">
@@ -14,7 +14,7 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Menu */}
-        <ul className="hidden lg:flex items-center space-x-8 text-sm text-gray-300">
+        <ul className="hidden lg:flex items-center space-x-15 text-md text-gray-300">
           {["Home", "About", "Projects", "Services", "Resume"].map(item => (
             <li
               key={item}
@@ -23,7 +23,7 @@ const Navbar = () => {
               {item}
             </li>
           ))}
-        </ul>
+        </ul> 
 
         {/* Desktop Right Actions */}
         <div className="hidden lg:flex items-center space-x-15">

@@ -6,10 +6,10 @@ const Navbar = () => {
 
   return (
     <header className="w-full bg-[#1a1a1a]">
-      <nav className="relative max-w-7xl mx-auto flex items-center justify-between px-6 py-7">
+      <nav className="relative max-w-7xl mx-auto flex items-center justify-between px-6 py-5">
         
         {/* Logo */}
-        <div className="text-white font-semibold text-xl z-50">
+        <div className="text-white font-bold cursive text-xl z-50">
           IU
         </div>
 

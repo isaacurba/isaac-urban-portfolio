@@ -1,27 +1,16 @@
-# Isaac Urban | Developer Portfolio 🌍✨
+# React + Vite
 
-Welcome to my personal portfolio!  
-This site showcases my projects, skills, and journey as a front-end web developer.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## 🔧 Technologies Used
-- HTML
-- CSS
-- JavaScript
+Currently, two official plugins are available:
 
-## 📁 Pages Included
-- **Home:** Introduction and quick overview
-- **About / See My Work:** Projects and portfolio
-- **Contact (Coming soon)**
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## 🔗 Connect With Me
-- [GitHub](https://github.com/isaacurba)
-- [LinkedIn](https://linkedin.com/in/boluwatife-kpomassi-472b202b7)
-- [X (Twitter)](https://x.com/theisaacurban)
-- [TikTok](https://tiktok.com/@theisaacurban)
-- [Medium](https://medium.com/@Isaacurban0)
+## React Compiler
 
----
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-🚀 Powered by **passion** and a desire to grow in tech.
+## Expanding the ESLint configuration
 
-> Feedback? Reach out — I'm always open to improving!
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.

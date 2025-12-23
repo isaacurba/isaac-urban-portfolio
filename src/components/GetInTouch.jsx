@@ -1,8 +1,10 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { LoaderCircle } from 'lucide-react'
 
 const GetInTouch = () => {
   const [ loading, setLoadig ] = useState(false)
+  const api = import.meta.env.VITE_PROFORMS_API_KEY;
+
   return (
     <section className='w-full bg-[#1a1a1a] px-4'>
       <div className="relative max-w-3xl mx-auto flex flex-col items-center p-6 md:p-12 overflow-hidden">
@@ -24,7 +26,7 @@ const GetInTouch = () => {
         <div className="flex items-center justify-center p-4 w-full">
           <form 
           onSubmit={() => setLoadig(true)}
-          action="https://app.proforms.top/f/pr132a4adb" method="POST" className="p-8 w-full flex flex-col gap-4">
+          action={`https://app.proforms.top/f/${api}`} method="POST" className="p-8 w-full flex flex-col gap-4">
             <div>
               <label htmlFor="name" className="block text-white text-sm font-bold mb-2">
                 Name 
@@ -60,12 +62,12 @@ const GetInTouch = () => {
               <select
                 id="services"
                 name="services"
-                className="shadow appearance-none border rounded w-full py-5 px-3 text-white leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                className="shadow appearance-none border rounded w-full py-5 px-3 text-white bg-[#1a1a1a] leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
               >
                 <option value="">Select a Service</option>
                 <option value="web_development">Web Development</option>
-                <option value="mobile_app_development">Mobile App Development</option>
-                <option value="ui_ux_design">UI/UX Design</option>
+                {/* <option value="mobile_app_development">Mobile App Development</option> */}
+                {/* <option value="ui_ux_design">UI/UX Design</option> */}
                 <option value="consulting">Consulting</option>
                 <option value="other">Other</option>
               </select>
@@ -92,7 +94,6 @@ const GetInTouch = () => {
                 {loading ? (
                   <span className="flex items-center justify-center gap-2">
                     <LoaderCircle className='animate-spin'/> 
-                    Sending message...
                   </span>
 
                 ) : (

@@ -7,7 +7,7 @@ const GetInTouch = () => {
 
   return (
     <section className='w-full bg-[#1a1a1a] px-4'>
-      <div className="relative max-w-3xl mx-auto flex flex-col items-center p-6 md:p-12 overflow-hidden">
+      <div className="relative max-w-3xl mx-auto flex flex-col items-center p-2 md:p-12 overflow-hidden">
 
         <div className='flex items-center flex-col py-8'>
           <h1 className='text-white lg:text-5xl text-3xl font-bold'>
@@ -23,10 +23,10 @@ const GetInTouch = () => {
         </div>
 
         {/* FORM */}
-        <div className="flex items-center justify-center p-4 w-full">
+        <div className="flex items-center justify-center p-0 md:p-4 w-full">
           <form 
           onSubmit={() => setLoadig(true)}
-          action={`https://app.proforms.top/f/${api}`} method="POST" className="p-8 w-full flex flex-col gap-4">
+          action={`https://app.proforms.top/f/${api}`} method="POST" className="p-2 md:p-8 w-full flex flex-col gap-4">
             <div>
               <label htmlFor="name" className="block text-white text-sm font-bold mb-2">
                 Name 

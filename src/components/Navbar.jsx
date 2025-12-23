@@ -9,7 +9,9 @@ const Navbar = () => {
       <nav className="relative max-w-7xl mx-auto flex items-center justify-between px-6 py-5">
         
         {/* Logo */}
-        <div className="text-white font-bold cursive text-xl z-50">
+        <div className="text-white font-bold cursive text-xl z-50
+        cursor-pointer transition-all duration-500 hover:scale-125 
+        hover:drop-shadow-[0_0_15px_rgba(34,211,238,0.8)] animate-bounce">
           IU
         </div>
 

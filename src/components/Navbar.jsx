@@ -38,7 +38,7 @@ const Navbar = () => {
         {/* Mobile Menu Button */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="lg:hidden text-white hover:text-[#4fc3f7] z-50"
+          className="lg:hidden text-white hover:text-[#4fc3f7] z-50 "
         >
           {isOpen ? <X /> : <Menu />}
         </button>

@@ -3,7 +3,7 @@ import isaac from "../assets/images/bobo 1.jpg"
 import { motion } from "framer-motion"
 const Main = () => {
   return (
-    <main className='w-full bg-[#1a1a1a] px-4 py-10'>
+    <main className='w-full bg-[#1a1a1a] px-4 py-3'>
         <div className='relative max-w-3xl mx-auto flex flex-col items-center p-6 md:p-12 overflow-hidden'>
             <img 
               src={boxBackground} 

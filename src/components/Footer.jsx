@@ -1,5 +1,5 @@
 import Gmail from "../assets/images/gmail.png";
-import { FaLinkedinIn, FaDribbble, FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
+import { FaLinkedinIn, FaFacebookF, FaInstagram, FaTwitter, FaGithub } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 const Footer = () => {
@@ -83,7 +83,7 @@ const Footer = () => {
                         viewport={{ once: true }}
                         className="text-[#888888] text-sm md:text-base"
                     >
-                        &copy; {new Date().getFullYear()} all rights reserved.
+                        &copy; {new Date().getFullYear()} All rights reserved.
                     </motion.p>
 
                     {/* Social Icons - Staggered Pop In */}
@@ -94,11 +94,12 @@ const Footer = () => {
                         viewport={{ once: true }}
                         className="flex items-center gap-4"
                     >
-                        <SocialIcon icon={<FaLinkedinIn />} variants={socialVariants} />
-                        <SocialIcon icon={<FaDribbble />} variants={socialVariants} />
-                        <SocialIcon icon={<FaFacebookF />} variants={socialVariants} />
-                        <SocialIcon icon={<FaInstagram />} variants={socialVariants} />
-                        <SocialIcon icon={<FaTwitter />} variants={socialVariants} />
+                        <SocialIcon icon={<FaLinkedinIn />} variants={socialVariants} href="https://www.linkedin.com/in/boluwatife-kpomassi-472b202b7/" />
+                        {/* <SocialIcon icon={<FaDribbble />} variants={socialVariants} href="" /> */}
+                        <SocialIcon icon={<FaFacebookF />} variants={socialVariants} href="https://www.facebook.com/Isaacurban0" />
+                        {/* <SocialIcon icon={<FaInstagram />} variants={socialVariants} href="" /> */}
+                        <SocialIcon icon={<FaTwitter />} variants={socialVariants} href="https://x.com/TheIsaacUrban" />
+                        <SocialIcon icon={<FaGithub />} variants={socialVariants} href="https://github.com/isaacurba" />
                     </motion.div>
                 </div>
 
@@ -109,8 +110,8 @@ const Footer = () => {
 
 // Reusable Social Icon Component with Motion
 // Note: We pass 'variants' down to it
-const SocialIcon = ({ icon, variants }) => {
-  return (
+const SocialIcon = ({ icon, variants, href }) => {
+  const content = (
     <motion.div 
         variants={variants}
         whileHover={{ scale: 1.1, rotate: 5 }}
@@ -120,6 +121,16 @@ const SocialIcon = ({ icon, variants }) => {
         {icon}
     </motion.div>
   );
+
+  if (href) {
+    return (
+      <a href={href} target="_blank" rel="noopener noreferrer">
+        {content}
+      </a>
+    );
+  }
+
+  return content;
 };
 
 export default Footer;

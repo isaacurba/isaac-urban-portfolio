@@ -77,7 +77,7 @@ const AboutMe = () => {
               whileTap={{ scale: 0.95 }}
               transition={{ duration: 0.3, delay: 0.6 }}
               viewport={{ once: true }}
-              className="border border-[#4fc3f7] text-white px-4 py-3 rounded-full hover:bg-[#4fc3f7] hover:text-white transition-colors duration-300 my-9 lg:text-xl text-sm"
+              className="border border-[#4fc3f7] text-white px-4 py-3 rounded-full  hover:text-white transition-colors duration-300 my-9 lg:text-xl text-sm hover:bg-[#4fc3f7]"
             >
                 Download Resume
             </motion.a>

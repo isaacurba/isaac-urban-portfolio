@@ -1,5 +1,5 @@
 import boxBackground from "../assets/images/boxBackground.png"
-import isaac from "../assets/images/bobo 1.jpg"
+import isaac from "../assets/images/original.jpeg"
 import { motion } from "framer-motion"
 
 const Main = () => {

@@ -10,7 +10,7 @@ const Projects = () => {
   const [filteredItems, setFilteredItems] = useState(projects)
 
   let filter = ["Frontend", "Backend", "Fullstack", "API", "Database"]
-  let active = "bg-[#4fc3f7]/10 border border-[#4fc3f7] text-white scale-105"
+  let active = "bg-[#4fc3f7]/30 border border-[#4fc3f7] text-white scale-105 font-bold"
 
   const handleFilterButtonClick = (selectedCategory) => {
     if (selectedFilters.includes(selectedCategory)){
@@ -23,7 +23,10 @@ const Projects = () => {
 
   const filterItems = () => {
     if (selectedFilters.length > 0) {
-      const tempItems = projects.filter((item) => selectedFilters.includes(item.category));
+      const tempItems = projects.filter((item) => {
+        const itemCategories = Array.isArray(item.category) ? item.category : [item.category];
+        return selectedFilters.some(filter => itemCategories.includes(filter));
+      });
       setFilteredItems(tempItems);
     } else {
       setFilteredItems(projects);

@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { Menu, X } from "lucide-react"
+import { Link } from "react-router-dom"
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -9,11 +10,14 @@ const Navbar = () => {
       <nav className="relative max-w-7xl mx-auto flex items-center justify-between px-6 py-5">
         
         {/* Logo */}
-        <div className="text-white font-bold cursive text-xl z-50
-        cursor-pointer transition-all duration-500 hover:scale-125 
-        hover:drop-shadow-[0_0_15px_rgba(34,211,238,0.8)] animate-bounce">
-          IU
-        </div>
+        <Link to="/"> 
+          <div className="text-white font-bold cursive text-xl z-50
+          cursor-pointer transition-all duration-500 hover:scale-125 
+          hover:drop-shadow-[0_0_15px_rgba(34,211,238,0.8)] animate-bounce">
+            IU
+          </div>        
+        </Link>
+
 
         {/* Desktop Menu */}
         <ul className="hidden lg:flex items-center space-x-15 text-md text-gray-300">
@@ -22,7 +26,7 @@ const Navbar = () => {
               key={item}
               className="hover:text-[#4fc3f7] cursor-pointer transition"
             >
-              {item}
+              {item === "Projects" ? <Link to="/projects">{item}</Link> : item}
             </li>
           ))}
         </ul> 
@@ -54,7 +58,13 @@ const Navbar = () => {
                 className="text-2xl hover:text-[#4fc3f7] cursor-pointer transition"
                 onClick={() => setIsOpen(false)}
               >
-                {item}
+                {item === "Home" ? (
+                  <Link to="/">{item}</Link>
+                ) : item === "Projects" ? (
+                  <Link to="/projects">{item}</Link>
+                ) : (
+                  item
+                )}
               </span>
             ))}
 

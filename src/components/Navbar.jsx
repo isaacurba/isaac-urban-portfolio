@@ -36,7 +36,7 @@ const Navbar = () => {
           <button className="border border-[#4fc3f7] text-[#4fc3f7] px-4 py-1.5 rounded-sm text-sm hover:bg-[#4fc3f7] hover:text-white transition">
             Contact Me
           </button>
-          <span className="text-gray-300 cursor-pointer">☀️</span>
+          {/* <span className="text-gray-300 cursor-pointer">☀️</span> */}
         </div>
 
         {/* Mobile Menu Button */}

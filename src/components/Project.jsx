@@ -40,7 +40,7 @@ const Projects = () => {
 
 
   return (
-    <section className="w-full bg-[#1a1a1a] px-4">
+    <section className="w-full bg-[#1a1a1a] px-4 scroll-mt-10" id="projects">
       <div className="relative max-w-5xl mx-auto flex flex-col items-center p-12 overflow-hidden">
         
         {/* Header - Animates in from top */}
@@ -59,7 +59,7 @@ const Projects = () => {
           </p>
         </motion.div>
 
-        <div className="flex text-[#a9a9a9] text-sm gap-4 flex-wrap justify-center items-center">
+        {/* <div className="flex text-[#a9a9a9] text-sm gap-4 flex-wrap justify-center items-center">
           {filter.map((category, index) => (
             <p
               key={index}
@@ -80,7 +80,7 @@ const Projects = () => {
               {category}
             </p>
           ))}
-        </div>
+        </div> */}
 
 
         <div className="grid gap-6 mt-12 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 ">
@@ -137,7 +137,7 @@ const Projects = () => {
                 </div>
 
                 {/* Tech Tags */}
-                <div className="flex flex-wrap gap-2 mb-4 mt-2">
+                {/* <div className="flex flex-wrap gap-2 mb-4 mt-2">
                   {project.techs.map((tech, index) => (
                     <span
                       key={index}
@@ -146,7 +146,7 @@ const Projects = () => {
                       {tech}
                     </span>
                   ))}
-                </div>
+                </div> */}
 
                 {/* Arrow Button */}
                 <div className="absolute bottom-4 right-4 z-10">
@@ -165,7 +165,7 @@ const Projects = () => {
         </div>
         
         {/* Button - Animates in last */}
-        <motion.button 
+        {/* <motion.button 
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5, delay: 0.2 }}
@@ -175,7 +175,7 @@ const Projects = () => {
           <Link to="/projects">
             View All
           </Link>
-        </motion.button>
+        </motion.button> */}
 
       </div>
     </section>

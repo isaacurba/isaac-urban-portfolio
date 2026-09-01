@@ -67,17 +67,18 @@ const Main = () => {
                 </motion.p>
 
                 {/* Button - Bounce In */}
-                <motion.button 
+                <motion.a 
                     initial={{ opacity: 0, scale: 0.8 }}
                     whileInView={{ opacity: 1, scale: 1 }}
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                     transition={{ duration: 0.3, delay: 0.7 }}
                     viewport={{ once: true }}
+                    href={`#contact`}
                     className="border lg:text-xl border-[#4fc3f7] text-white px-4 py-1.5 rounded-full text-sm hover:bg-[#4fc3f7] hover:text-white transition transition-all duration-300 my-5"
                 >
                     Contact Me
-                </motion.button>
+                </motion.a>
             </div>
         </div>
     </main>

@@ -27,7 +27,7 @@ const GetInTouch = () => {
   }
 
   return (
-    <section className='w-full bg-[#1a1a1a] px-4'>
+    <section className='w-full bg-[#1a1a1a] px-4 scroll-mt-10' id='contact'>
       <div className="relative max-w-3xl mx-auto flex flex-col items-center p-2 md:p-12 overflow-hidden">
 
         {/* Header - Slide Down */}

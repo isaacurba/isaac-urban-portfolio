@@ -2,7 +2,7 @@ import MovieApp from "../assets/images/movieApp.png"
 
 export const allProjects = [
     {
-        image: MovieApp,
+        image: "MovieDownloader Pro",
         name: "Movie App",
         description: "Lorem20kdhcydegcudhgcvdbccougvyi8dcvdhvbiuegvedbvdegfceydfckjbIGYCHIDVICGDVBDIYGDICVBDIYVGEIHBJNPIOCV",
         techs: ["html", "css", "JavaScript", "react", "tailwindCss", "react"],

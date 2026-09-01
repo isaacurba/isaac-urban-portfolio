@@ -1,57 +1,58 @@
-import MovieApp from "../assets/images/movieApp.png";
+import MovieDownloader from "../assets/images/image.png";
+import NOVA from "../assets/images/image copy.png";
 import LightCode from "../assets/images/lightCode.png";
 import CrispyKitchen from "../assets/images/krispyScreenshot.png"
-import NewsLetterSignUp from "../assets/images/newsletter.png"
+import EmergencyLocator from "../assets/images/image copy 2.png"
 import MagloDashboard from "../assets/images/magloDashboard.png"
 
 export const projects = [
     {
-        image: MovieApp,
-        name: "Movie App",
-        description: "MovieApp – A Netflix-style React app to discover movies, search titles, and save favourites using the TMDB API",
-        techs: ["react", "tailwindCss", "TMDB-API"],
-        url: "https://movie-app-one-henna-65.vercel.app/",
-        category:["Frontend", "API"]
+        image: MovieDownloader,
+        name: "MovieDownloaderPro",
+        description: "Movie downloader Pro– A Netflix-style React app to discover movies, search titles, and save favourites using the TMDB API",
+        // techs: ["react", "tailwindCss", "TMDB-API"],
+        url: "https://film-finder-eta.vercel.app/",
+        // category:["Frontend", "API"]
     },
     {
         image: LightCode,
         name: "Light Code",
         description: "A pixel-perfect implementation of a modern Figma design, brought to life with clean and responsive front-end code. The project showcases attention to design details and smooth layout transitions.",
-        techs: ["react", "tailwindCss"],
+        // techs: ["react", "tailwindCss"],
         url: "https://light-code-one.vercel.app/",
-        category:"Frontend"        
+        // category:"Frontend"        
     },
     {
         image: CrispyKitchen,
-        name: "Movie App",
+        name: "Crispy Kitchen",
         description: "A full stack restaurant reservation website",
-        techs: ["Node.js", "express", "EJS"],
-        url: "https://movie-app-one-henna-65.vercel.app/",
-        category:"Fullstack"
+        // techs: ["Node.js", "express", "EJS"],
+        url: "https://crispy-kitchen-oi0f.onrender.com/",
+        // category:"Fullstack"
     },
     {
-        image: NewsLetterSignUp,
-        name: "NewsLetter Signup",
-        description: " Newsletter Signup App A simple newsletter signup app",
-        techs: ["html", "css", "JavaScript", "Node.js", "express"],
-        url: "https://newsletter-signup-mwbu.onrender.com/",
-        category:["Fullstack", "Backend", "API"]
+        image: NOVA,
+        name: "NOVA",
+        description: "A modern productivity and collaboration platform designed to help teams organize projects, streamline workflows, and turn ideas into measurable progress through a clean, intuitive interface.",
+        // techs: ["html", "css", "JavaScript", "Node.js", "express"],
+        url: "https://v0-nova-palace.vercel.app/",
+        // category:["Fullstack", "Backend", "API"]
     },
     {
         image: MagloDashboard,
         name: "Maglo Finance Dashboard",
         description: "A modern, responsive invoicing application built with React that allows users to create, manage, and track invoices.",
-        techs: ["react", "tailwindCss", "Schadcn Ui", "AppWrite"],
-        url: "https://movie-app-one-henna-65.vercel.app/",
-        category:["Database", "Frontend", "Backend", "API"]
+        // techs: ["react", "tailwindCss", "Schadcn Ui", "AppWrite"],
+        url: "https://finacedashboardtalentra.netlify.app/",
+        // category:["Database", "Frontend", "Backend", "API"]
     },
     {
-        image: MovieApp,
-        name: "Movie App",
-        description: "Lorem20kdhcydegcudhgcvdbccougvyi8dcvdhvbiuegvedbvdegfceydfckjbIGYCHIDVICGDVBDIYGDICVBDIYVGEIHBJNPIOCV",
-        techs: ["html", "css", "JavaScript", "react", "tailwindCss", "react"],
-        url: "https://movie-app-one-henna-65.vercel.app/",
-        category:"Frontend"
+        image: EmergencyLocator,
+        name: "Emergency Locator",
+        description: "A location-based emergency services platform that helps users find nearby hospitals, police stations, fire stations, airports, train stations, and other essential services, with integrated weather and traffic information.",
+        // techs: ["html", "css", "JavaScript", "react", "tailwindCss", "react"],
+        url: "https://emergency-app-omega.vercel.app/",
+        // category:"Frontend"
     },                    
 
 ]

@@ -18,25 +18,30 @@ const Navbar = () => {
           </div>        
         </Link>
 
-
         {/* Desktop Menu */}
         <ul className="hidden lg:flex items-center space-x-15 text-md text-gray-300">
           {["Home", "About", "Projects", "Services", "Resume"].map(item => (
-            <li
+            <a
               key={item}
+              onClick={() => setIsOpen(false)}
+              href={item === "Resume" ? "/Boluwatife_Kpomassi.pdf" : `#${item.toLowerCase()}`}
+              download={item === "Resume" ? "Boluwatife_Kpomassi.pdf" : undefined}
               className="hover:text-[#4fc3f7] cursor-pointer transition"
             >
-              {item === "Projects" ? <Link to="/projects">{item}</Link> : item}
-            </li>
+              {item}
+            </a>
           ))}
         </ul> 
 
         {/* Desktop Right Actions */}
         <div className="hidden lg:flex items-center space-x-15">
-          <button className="border border-[#4fc3f7] text-[#4fc3f7] px-4 py-1.5 rounded-sm text-sm hover:bg-[#4fc3f7] hover:text-white transition">
+          <a 
+          onClick={() => setIsOpen(false)}
+          href={`#contact`}
+          className="border border-[#4fc3f7] text-[#4fc3f7] px-4 py-1.5 rounded-sm text-sm hover:bg-[#4fc3f7] hover:text-white transition">
             Contact Me
-          </button>
-          <span className="text-gray-300 cursor-pointer">☀️</span>
+          </a>
+          {/* <span className="text-gray-300 cursor-pointer">☀️</span> */}
         </div>
 
         {/* Mobile Menu Button */}
@@ -50,30 +55,28 @@ const Navbar = () => {
         {/* Mobile Menu Overlay */}
         {isOpen && (
           <div className="fixed inset-0 bg-[#1a1a1a] z-40 flex flex-col items-center justify-center space-y-8 text-gray-300">
-
             {/* Mobile Links */}
             {["Home", "About", "Projects", "Services", "Resume"].map(item => (
-              <span
-                key={item}
-                className="text-2xl hover:text-[#4fc3f7] cursor-pointer transition"
-                onClick={() => setIsOpen(false)}
-              >
-                {item === "Home" ? (
-                  <Link to="/">{item}</Link>
-                ) : item === "Projects" ? (
-                  <Link to="/projects">{item}</Link>
-                ) : (
-                  item
-                )}
-              </span>
+            <a
+              key={item}
+              onClick={() => setIsOpen(false)}
+              href={item === "Resume" ? "/Boluwatife_Kpomassi.pdf" : `#${item.toLowerCase()}`}
+              download={item === "Resume" ? "Boluwatife_Kpomassi.pdf" : undefined}
+              className="text-2xl hover:text-[#4fc3f7] cursor-pointer transition"
+            >
+                {item}
+              </a>
             ))}
 
             {/* Mobile Actions */}
-            <button className="mt-6 border border-[#4fc3f7] text-[#4fc3f7] px-6 py-2 rounded-sm hover:bg-[#4fc3f7] hover:text-white transition">
+            <a
+            onClick={() => setIsOpen(false)}
+            href={`#contact`}
+            className="mt-6 border border-[#4fc3f7] text-[#4fc3f7] px-6 py-2 rounded-sm hover:bg-[#4fc3f7] hover:text-white transition">
               Contact Me
-            </button>
+            </a>
 
-            <span className="text-gray-300 cursor-pointer">☀️</span>
+            {/* <span className="text-gray-300 cursor-pointer">☀️</span> */}
           </div>
         )}
       </nav>

@@ -96,7 +96,7 @@ const Footer = () => {
                     >
                         <SocialIcon icon={<FaLinkedinIn />} variants={socialVariants} href="https://www.linkedin.com/in/boluwatife-kpomassi-472b202b7/" />
                         {/* <SocialIcon icon={<FaDribbble />} variants={socialVariants} href="" /> */}
-                        <SocialIcon icon={<FaFacebookF />} variants={socialVariants} href="https://www.facebook.com/Isaacurban0" />
+                        {/* <SocialIcon icon={<FaFacebookF />} variants={socialVariants} href="https://www.facebook.com/Isaacurban0" /> */}
                         {/* <SocialIcon icon={<FaInstagram />} variants={socialVariants} href="" /> */}
                         <SocialIcon icon={<FaTwitter />} variants={socialVariants} href="https://x.com/TheIsaacUrban" />
                         <SocialIcon icon={<FaGithub />} variants={socialVariants} href="https://github.com/isaacurba" />

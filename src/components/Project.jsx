@@ -40,8 +40,8 @@ const Projects = () => {
 
 
   return (
-    <section className="w-full bg-[#1a1a1a] px-4 scroll-mt-10" id="projects">
-      <div className="relative max-w-5xl mx-auto flex flex-col items-center p-12 overflow-hidden">
+    <section className="w-full bg-[#1a1a1a] px-4 scroll-mt-10" id="projects"> 
+      <div className="relative max-w-5xl mx-auto flex flex-col items-center px-4 sm:px-8 lg:px-12 py-12 overflow-hidden">
         
         {/* Header - Animates in from top */}
         <motion.div 
@@ -83,8 +83,7 @@ const Projects = () => {
         </div> */}
 
 
-        <div className="grid gap-6 mt-12 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 ">
-          {filteredItems.map((project, index) => (
+          <div className="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full">          {filteredItems.map((project, index) => (
             <motion.div
               key={project.id}
               // Animation Props
@@ -93,7 +92,7 @@ const Projects = () => {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true, margin: "-50px" }} 
               
-              className="group relative bg-[#1a1a1a] rounded-xl border border-white/5 hover:border-[#4fc3f7]/40 hover:z-20 transition-all duration-300 max-w-sm mx-auto w-full"
+              className="group relative w-full bg-[#1a1a1a] rounded-xl border border-white/5 ..."
             >
               {/* Image */}
               <div className="h-44 overflow-hidden rounded-t-xl">

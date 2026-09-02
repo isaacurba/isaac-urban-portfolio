@@ -59,8 +59,7 @@ const WhatIDo = () => {
 
   return (
     <section className='w-full bg-[#1a1a1a] px-4 scroll-mt-10' id='services'>
-        <div className="relative max-w-5xl mx-auto flex flex-col items-center p-12 overflow-hidden">
-
+        <div className="relative max-w-5xl mx-auto flex flex-col items-center px-4 sm:px-8 lg:px-12 py-12 overflow-hidden">
           {/* Header - Fade In Up */}
           <motion.div 
             initial={{ opacity: 0, y: -20 }}
@@ -87,8 +86,7 @@ const WhatIDo = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-50px" }} // Starts animating when 50px into view
-            className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
-          >
+            className="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full"          >
             {services.map((service, index) => (
               <motion.div
                 key={index}

@@ -59,7 +59,7 @@ const Footer = () => {
                         className="group border border-[#484e53] text-white px-6 py-3 md:px-8 md:py-4 lg:rounded-lg sm:rounded-full flex items-center gap-4 cursor-pointer hover:bg-white hover:text-black transition-all duration-300"
                     >
                         <img src={Gmail} alt="gmail icon" className="w-6 md:w-8" />
-                        <span className="text-sm md:text-lg lg:text-xl">kpomassiboluwatifeu@gmail.com</span>
+                        <span className="text-sm md:text-lg lg:text-xl">isaacurban.dev@gmail.com</span>
                     </motion.div>
                 </div>
 
@@ -94,7 +94,7 @@ const Footer = () => {
                         viewport={{ once: true }}
                         className="flex items-center gap-4"
                     >
-                        <SocialIcon icon={<FaLinkedinIn />} variants={socialVariants} href="https://www.linkedin.com/in/boluwatife-kpomassi-472b202b7/" />
+                        <SocialIcon icon={<FaLinkedinIn />} variants={socialVariants} href="https://www.linkedin.com/in/isaac-urban-472b202b7/" />
                         {/* <SocialIcon icon={<FaDribbble />} variants={socialVariants} href="" /> */}
                         {/* <SocialIcon icon={<FaFacebookF />} variants={socialVariants} href="https://www.facebook.com/Isaacurban0" /> */}
                         {/* <SocialIcon icon={<FaInstagram />} variants={socialVariants} href="" /> */}

@@ -68,8 +68,8 @@ const AboutMe = () => {
 
             {/* Button - Scale In */}
             <motion.a 
-              href="/Boluwatife_Kpomassi.pdf"
-              download="Boluwatife_Kpomassi.pdf"
+              href="/Isaac_Urban_CV.pdf"
+              download="Isaac_Urban_CV.pdf"
               initial={{ opacity: 0, scale: 0.8 }}
               whileInView={{ opacity: 1, scale: 1 }}
               whileHover={{ scale: 1.05, backgroundColor: "rgba(79, 195, 247, 0.1)" }}

@@ -24,8 +24,8 @@ const Navbar = () => {
             <a
               key={item}
               onClick={() => setIsOpen(false)}
-              href={item === "Resume" ? "/Boluwatife_Kpomassi.pdf" : `#${item.toLowerCase()}`}
-              download={item === "Resume" ? "Boluwatife_Kpomassi.pdf" : undefined}
+              href={item === "Resume" ? "/Isaac_Urban_CV.pdf" : `#${item.toLowerCase()}`}
+              download={item === "Resume" ? "Isaac_Urban_CV.pdf" : undefined}
               className="hover:text-[#4fc3f7] cursor-pointer transition"
             >
               {item}
@@ -60,8 +60,8 @@ const Navbar = () => {
             <a
               key={item}
               onClick={() => setIsOpen(false)}
-              href={item === "Resume" ? "/Boluwatife_Kpomassi.pdf" : `#${item.toLowerCase()}`}
-              download={item === "Resume" ? "Boluwatife_Kpomassi.pdf" : undefined}
+              href={item === "Resume" ? "/Isaac_Urban_CV.pdf" : `#${item.toLowerCase()}`}
+              download={item === "Resume" ? "Isaac_Urban_CV.pdf" : undefined}
               className="text-2xl hover:text-[#4fc3f7] cursor-pointer transition"
             >
                 {item}
